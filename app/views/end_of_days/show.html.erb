@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @end_of_day.user_id %>
+</p>
+
+<p>
+  <strong>Hours in meetings:</strong>
+  <%= @end_of_day.hours_in_meetings %>
+</p>
+
+<p>
+  <strong>Hours on expected tasks:</strong>
+  <%= @end_of_day.hours_on_expected_tasks %>
+</p>
+
+<p>
+  <strong>Hours on unexpected tasks:</strong>
+  <%= @end_of_day.hours_on_unexpected_tasks %>
+</p>
+
+<p>
+  <strong>Got done:</strong>
+  <%= @end_of_day.got_done %>
+</p>
+
+<p>
+  <strong>To do:</strong>
+  <%= @end_of_day.to_do %>
+</p>
+
+<p>
+  <strong>Concerns:</strong>
+  <%= @end_of_day.concerns %>
+</p>
+
+<p>
+  <strong>Learned:</strong>
+  <%= @end_of_day.learned %>
+</p>
+
+<p>
+  <strong>Published:</strong>
+  <%= @end_of_day.published %>
+</p>
+
+<%= link_to 'Edit', edit_end_of_day_path(@end_of_day) %> |
+<%= link_to 'Back', end_of_days_path %>

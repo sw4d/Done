@@ -1,0 +1,2 @@
+class EndOfDay < ApplicationRecord
+end

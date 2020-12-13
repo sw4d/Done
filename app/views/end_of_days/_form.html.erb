@@ -1,0 +1,62 @@
+<%= form_with(model: end_of_day) do |form| %>
+  <% if end_of_day.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(end_of_day.errors.count, "error") %> prohibited this end_of_day from being saved:</h2>
+
+      <ul>
+        <% end_of_day.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :user_id %>
+    <%= form.number_field :user_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :hours_in_meetings %>
+    <%= form.text_field :hours_in_meetings %>
+  </div>
+
+  <div class="field">
+    <%= form.label :hours_on_expected_tasks %>
+    <%= form.text_field :hours_on_expected_tasks %>
+  </div>
+
+  <div class="field">
+    <%= form.label :hours_on_unexpected_tasks %>
+    <%= form.text_field :hours_on_unexpected_tasks %>
+  </div>
+
+  <div class="field">
+    <%= form.label :got_done %>
+    <%= form.text_area :got_done %>
+  </div>
+
+  <div class="field">
+    <%= form.label :to_do %>
+    <%= form.text_area :to_do %>
+  </div>
+
+  <div class="field">
+    <%= form.label :concerns %>
+    <%= form.text_area :concerns %>
+  </div>
+
+  <div class="field">
+    <%= form.label :learned %>
+    <%= form.text_area :learned %>
+  </div>
+
+  <div class="field">
+    <%= form.label :published %>
+    <%= form.datetime_select :published %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

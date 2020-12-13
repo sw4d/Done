@@ -1,0 +1,23 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_id: 1
+  hours_in_meetings: 9.99
+  hours_on_expected_tasks: 9.99
+  hours_on_unexpected_tasks: 9.99
+  got_done: MyText
+  to_do: MyText
+  concerns: MyText
+  learned: MyText
+  published: 2020-12-13 08:21:25
+
+two:
+  user_id: 1
+  hours_in_meetings: 9.99
+  hours_on_expected_tasks: 9.99
+  hours_on_unexpected_tasks: 9.99
+  got_done: MyText
+  to_do: MyText
+  concerns: MyText
+  learned: MyText
+  published: 2020-12-13 08:21:25
